@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <ul>
+    {% for resource in TotalPages %}
+        <li>{{ resource.displayName }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
